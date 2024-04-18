@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assingnment 24</title>
+</head>
+<body>
+
+    <a href="#" id="myLink">Click me</a>
+
+
+
+    <img class="image" src="https://imageio.forbes.com/specials-images/imageserve/63f22939ff0dadf0a54144c0/Galaxy-S23-Ultra-2606/960x0.jpg?height=474&width=711&fit=bounds" alt="" width="200" height="auto">
+
+
+    <img class="image" src="https://imageio.forbes.com/specials-images/imageserve/63f22939ff0dadf0a54144c0/Galaxy-S23-Ultra-2606/960x0.jpg?height=474&width=711&fit=bounds" alt="" width="200" height="auto">
+
+
+    <img class="image" src="https://imageio.forbes.com/specials-images/imageserve/63f22939ff0dadf0a54144c0/Galaxy-S23-Ultra-2606/960x0.jpg?height=474&width=711&fit=bounds" alt="" width="200" height="auto">
+    
+
+
+    <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>20</td>
+            <td>A</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>22</td>
+            <td>B</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+
+
+      <div id="image-container">
+        <img id="main-image" src="https://www.91-cdn.com/hub/wp-content/uploads/2023/01/samsung-galaxy-s23-ultra.jpg" alt="" width="500" height="300">
+    </div>
+
+
+
+    <h1 id="counter">0</h1>
+    <button onclick="increaseCounter()">Increase</button>
+    <button onclick="decreaseCounter()">Decrease</button>
+
+      
+
+
+
+
+    <form id="signup-form">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <button type="submit">Submit</button>
+  </form>
+  
+  <div id="display-data"></div>
+  
+
+
+
+
+  <div class="item">
+    <h2>Item Name</h2>
+    <p>Summary of the item details...</p>
+    <button class="read-more-btn">Read more</button>
+    <div class="full-details" style="display: none;">
+        <p>Full details of the item...</p>
+        <p>More information about the item...</p>
+    </div>
+</div>
+
+
+<div class="item">
+    <h2>Another Item Name</h2>
+    <p>Summary of another item...</p>
+    <button class="read-more-btn">Read more</button>
+    <div class="full-details" style="display: none;">
+        <p>Full details of another item...</p>
+        <p>More information about another item...</p>
+    </div>
+</div>
+
+
+
+
+<form id="student-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" required>
+  
+  <label for="grade">Grade:</label>
+  <input type="text" id="grade" name="grade" required>
+  
+  <button type="submit">Add Student</button>
+</form>
+
+<!-- Table to display student details -->
+<table id="student-table">
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Grade</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody id="table-body">
+  </tbody>
+</table>
+
+
+<form id="edit-form" style="display: none;">
+  <label for="edit-name">Name:</label>
+  <input type="text" id="edit-name" name="edit-name" required>
+  
+  <label for="edit-age">Age:</label>
+  <input type="number" id="edit-age" name="edit-age" required>
+  
+  <label for="edit-grade">Grade:</label>
+  <input type="text" id="edit-grade" name="edit-grade" required>
+  
+  <button type="submit">Update</button>
+  <button type="button" onclick="cancelEdit()">Cancel</button>
+</form>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

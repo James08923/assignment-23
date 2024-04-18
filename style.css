@@ -1,0 +1,38 @@
+.image {
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  .image:hover {
+    transform: scale(1.1);
+  }
+
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #d32f2f;
+  }
+
+
+
+  #image-container {
+    width: 300px;
+    height: 300px;
+}
